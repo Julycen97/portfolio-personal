@@ -1,0 +1,688 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 70vh;
+}
+
+h1, h2{
+    font-family: Sofia;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2:not(.footer h2){
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 1.7rem;
+    padding-left: 5px;
+    background: linear-gradient(to left, white, rgba(251, 150, 114, 0.55), rgba(251, 150, 114, 0.55));
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+i:not(.header i){
+    color: coral;
+}
+
+/* ESTILOS HEADER */
+.header{
+    grid-area: H;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    min-height: 5rem;
+    gap: 10px;
+    background: linear-gradient(to top, white, rgba(251, 150, 114, 0.55), rgba(251, 150, 114, 0.55));
+}
+
+.header div:first-child{
+    width: 100%;
+    text-align: center;
+}
+
+.navList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header div ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.header div ul li{
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+    font-size: large;
+}
+
+.header div ul li:hover{
+    color: white;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px black;
+    transform: scale(1.2);
+}
+
+.openMenu, .closeMenu{
+    border-radius: 15px ;
+    border: none;
+    cursor: pointer;
+    display: none;
+    height: 4em;
+    width: 4em;
+}
+
+.openMenu:hover{
+    box-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    transform: scale(1.1);
+}
+
+.closeMenu:hover{
+    box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+    transform: scale(1.1);
+}
+
+/* ESTILOS MAIN */
+.main{
+    margin: auto;
+    grid-area: M;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    gap: 10px;
+}
+
+.section{
+    width: 90%;
+    border-bottom: 5px dotted black;
+    padding: 10px;
+}
+
+/* ESTILOS SECTION SOBRE MI */
+.containerSobreMi{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerSobreMi .avatar{
+    background-image: url("../assets/IMG/imagen-personal/IMG-CV.jpg");
+    background-size: cover;
+    background-position: end;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.containerSobreMi div{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerSobreMi div div{
+    width: 100%;
+}
+
+/* ESTILOS SECTION FORMACION */
+.containerFormacion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.containerFormacion div:first-child{
+    width: 100%;
+}
+
+.cardFormacion{
+    width: 45%;
+    min-height: fit-content;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: whitesmoke;
+}
+
+.cardFormacion div:not(div:first-child){
+    width: 49%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardFormacion .btn{
+    min-width: fit-content;
+    display: flex;
+    height: 3rem;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(251, 150, 114, 0.55);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px gray;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cardFormacion .btn:hover{
+    box-shadow: 1px 1px 5px gray;
+    transform: scale(1.1);
+    background-color: coral;
+}
+
+/* ESTILOS SECTION PROYECTOS */
+.containerProyectos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.containerProyectos div:first-child{
+    width: 100%;
+}
+
+.cardProyectos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: whitesmoke;
+}
+
+.cardProyectos div:not(div:first-child){
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cardProyectos div:first-child{
+    width: 100%;
+}
+
+.cardProyectos div ul li::marker{
+    color: coral;
+}
+
+.imgWF{
+    background: url("../assets/IMG/proyectos/App-Winform-Home.png");
+}
+
+.imgMenu{
+    background: url("../assets/IMG/proyectos/Pagina-Menu-Digital.png");
+}
+
+.imgVentaArt{
+    background: url("../assets/IMG/proyectos/Pagina-Venta-Art.png");
+}
+
+.imgDatoContacto{
+    background: url("../assets/IMG/proyectos/Pagina-Datos-Contacto.png");
+}
+
+.cardProyectos div a{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.cardProyectos div .imgProyecto{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cardProyectos div .imgProyecto:hover{
+    box-shadow: 1px 1px 5px rgb(91, 91, 91);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ESTILOS SECTION HABILIDADES */
+.containerHabilidades{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.containerHabilidades > div:first-of-type{
+    width: 100%;
+}
+
+.containerHabilidades > div:last-of-type{
+    width: 100%;
+}
+
+.cardHabilidades{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.cardHabilidades i{
+    font-size: 1.7rem;
+}
+
+.cardHabilidades h3{
+    width: 100%;
+    text-align: center;
+}
+
+.cardHabilidades .imgC{
+    background: url("../assets/IMG/habilidades/C.png");
+}
+
+.cardHabilidades .imgCpp{
+    background: url("../assets/IMG/habilidades/C++.png");
+}
+
+.cardHabilidades .imgCSharp{
+    background: url("../assets/IMG/habilidades/C-Sharp.png");
+}
+
+.cardHabilidades .imgJava{
+    background: url("../assets/IMG/habilidades/Java.png");
+}
+
+.cardHabilidades .imgHTML{
+    background: url("../assets/IMG/habilidades/HTML.png");
+}
+
+.cardHabilidades .imgCSS{
+    background: url("../assets/IMG/habilidades/CSS.png");
+}
+
+.cardHabilidades .imgBootstrap{
+    background: url("../assets/IMG/habilidades/Bootstrap.png");
+}
+
+.cardHabilidades .imgJS{
+    background: url("../assets/IMG/habilidades/JS.png");
+}
+
+.cardHabilidades .imgSQL{
+    background: url("../assets/IMG/habilidades/T-SQL.png");
+}
+
+.cardHabilidades .imgMySQL{
+    background: url("../assets/IMG/habilidades/My-SQL.png");
+}
+
+.cardHabilidades .imgVS{
+    background: url("../assets/IMG/habilidades/VS.jpeg");
+}
+
+.cardHabilidades .imgVSC{
+    background: url("../assets/IMG/habilidades/VSC.png");
+}
+
+.cardHabilidades .imgCB{
+    background: url("../assets/IMG/habilidades/Codeblocks.jpeg");
+}
+
+.cardHabilidades .imgEclipse{
+    background: url("../assets/IMG/habilidades/Eclipse.png");
+}
+
+.cardHabilidades .imgIntelliJ{
+    background: url("../assets/IMG/habilidades/IntelliJIDEA.png");
+}
+
+.cardHabilidades .imgGit{
+    background: url("../assets/IMG/habilidades/Git.png");
+}
+
+.cardHabilidades .imgGitHub{
+    background: url("../assets/IMG/habilidades/GitHub.png");
+}
+
+.cardHabilidades .imgSSMS{
+    background: url("../assets/IMG/habilidades/SSMS.png");
+}
+
+.cardHabilidades .imgADS{
+    background: url("../assets/IMG/habilidades/AzureDS.png");
+}
+
+.cardHabilidades .imgWorkbench{
+    background: url("../assets/IMG/habilidades/Workbench.jpeg");
+}
+
+.cardHabilidades .imgNET{
+    background: url("../assets/IMG/habilidades/NET.png");
+}
+
+.cardHabilidades .imgSpringBoot{
+    background: url("../assets/IMG/habilidades/spring-boot.png");
+}
+
+.cardHabilidades .imgHabilidades{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+/* ESTILOS FOOTER */
+.footer{
+    grid-area: F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 12rem;
+    gap: 10px;
+    background: linear-gradient(to bottom, white, rgba(251, 150, 114, 0.55), rgba(251, 150, 114, 0.55));
+}
+
+.containerFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.containerFooter div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.containerFooter div a:not(.containerFooter div:last-of-type a){
+    font-size: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.containerFooter div a span{
+    font-size: large;
+}
+
+.containerFooter div a:hover{
+    transform: scale(1.1);
+    text-shadow: 1px 1px 5px black;
+}
+
+.containerFooter div a i{
+    transition: color 0.3s ease-in-out;
+}
+
+.containerFooter div a i:hover{
+    color: gray;
+}
+
+.containerFooter > div:first-of-type{
+    display: block;
+    width: 100%;
+}
+
+.containerFooter > div:last-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    width: 90%;
+}
+
+/* ESTILOS CONTAINER */
+.container{
+    display: grid;
+    grid-template-areas:
+    "H H H H"
+    "M M M M"
+    "M M M M"
+    "F F F F";
+    width: 100%;
+    gap: 10px;
+}
+
+@media screen and (max-width: 840px){
+    h2:not(.footer h2){
+        font-size: 1.4rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    p, span, li{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .cardFormacion{
+        width: 100%;
+    }
+
+    .cardFormacion .btn{
+        width: fit-content;
+    }
+
+    .cardProyectos div .imgProyecto{
+        width: 150px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .cardProyectos div:not(.cardProyectos div:first-of-type){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardProyectos div:not(div:first-child){
+        width: 100%;
+    }
+
+    .cardProyectos div ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header div{
+        width: 20%;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+    }
+
+    .header div ul{
+        flex-direction: column;
+    }
+
+    .header div:first-child{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header h1{
+        font-size: 1.5rem;
+    }
+
+    h2:not(.footer h2){
+        font-size: 1rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+    }
+
+    p, span, li{
+        font-size: 0.7rem;
+    }
+
+    .openMenu, .closeMenu{
+        display: block;
+    }
+
+    .closeMenu{
+        margin-top: 10px;
+    }
+    
+    .nav{
+        visibility: hidden;
+        background-color: black;
+        bottom: 0;
+        display: flex;
+        align-items: end;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        opacity: 0;
+        position: fixed;
+        padding: 10px;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .navList{
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .navList li a{
+        color: white;
+        font-size: 1rem;
+    }
+
+    .navList li a:hover{
+        text-shadow: 2px 2px 10px white;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hiddenAll{
+        z-index: -1;
+    }
+
+    .containerSobreMi{
+        flex-direction: column;
+    }
+
+    .containerSobreMi div{
+        width: 100%;
+    }
+
+    .containerSobreMi .avatar{
+        width: 150px;
+        height: 150px;
+    }
+
+    .cardFormacion .btn{
+        font-size: 0.8rem;
+    }
+
+    .cardHabilidades .imgHabilidades{
+        width: 50px;
+        height: 50px;
+    }
+
+    .containerFooter div a:not(.containerFooter div:last-of-type a){
+        font-size: 3rem;
+    }
+}
