@@ -147,7 +147,7 @@ i:not(.header i){
 }
 
 .containerSobreMi .avatar{
-    background-image: url("/assets/IMG/imagen-personal/IMG-CV.jpg");
+    background-image: url("./IMG/imagen-personal/IMG-CV.jpg");
     background-size: cover;
     background-position: end;
     width: 220px;
@@ -270,19 +270,19 @@ i:not(.header i){
 }
 
 .imgWF{
-    background: url("/assets/IMG/proyectos/App-Winform-Home.png");
+    background: url("./IMG/proyectos/App-Winform-Home.png");
 }
 
 .imgMenu{
-    background: url("/assets/IMG/proyectos/Pagina-Menu-Digital.png");
+    background: url("./IMG/proyectos/Pagina-Menu-Digital.png");
 }
 
 .imgVentaArt{
-    background: url("/assets/IMG/proyectos/Pagina-Venta-Art.png");
+    background: url("./IMG/proyectos/Pagina-Venta-Art.png");
 }
 
 .imgDatoContacto{
-    background: url("/assets/IMG/proyectos/Pagina-Datos-Contacto.png");
+    background: url("./IMG/proyectos/Pagina-Datos-Contacto.png");
 }
 
 .cardProyectos div a{
@@ -344,91 +344,91 @@ i:not(.header i){
 }
 
 .cardHabilidades .imgC{
-    background: url("/assets/IMG/habilidades/C.png");
+    background: url("./IMG/habilidades/C.png");
 }
 
 .cardHabilidades .imgCpp{
-    background: url("/assets/IMG/habilidades/C++.png");
+    background: url("./IMG/habilidades/C++.png");
 }
 
 .cardHabilidades .imgCSharp{
-    background: url("/assets/IMG/habilidades/C-Sharp.png");
+    background: url("./IMG/habilidades/C-Sharp.png");
 }
 
 .cardHabilidades .imgJava{
-    background: url("/assets/IMG/habilidades/Java.png");
+    background: url("./IMG/habilidades/Java.png");
 }
 
 .cardHabilidades .imgHTML{
-    background: url("/assets/IMG/habilidades/HTML.png");
+    background: url("./IMG/habilidades/HTML.png");
 }
 
 .cardHabilidades .imgCSS{
-    background: url("/assets/IMG/habilidades/CSS.png");
+    background: url("./IMG/habilidades/CSS.png");
 }
 
 .cardHabilidades .imgBootstrap{
-    background: url("/assets/IMG/habilidades/Bootstrap.png");
+    background: url("./IMG/habilidades/Bootstrap.png");
 }
 
 .cardHabilidades .imgJS{
-    background: url("/assets/IMG/habilidades/JS.png");
+    background: url("./IMG/habilidades/JS.png");
 }
 
 .cardHabilidades .imgSQL{
-    background: url("/assets/IMG/habilidades/T-SQL.png");
+    background: url("./IMG/habilidades/T-SQL.png");
 }
 
 .cardHabilidades .imgMySQL{
-    background: url("/assets/IMG/habilidades/My-SQL.png");
+    background: url("./IMG/habilidades/My-SQL.png");
 }
 
 .cardHabilidades .imgVS{
-    background: url("/assets/IMG/habilidades/VS.jpeg");
+    background: url("./IMG/habilidades/VS.jpeg");
 }
 
 .cardHabilidades .imgVSC{
-    background: url("/assets/IMG/habilidades/VSC.png");
+    background: url("./IMG/habilidades/VSC.png");
 }
 
 .cardHabilidades .imgCB{
-    background: url("/assets/IMG/habilidades/Codeblocks.jpeg");
+    background: url("./IMG/habilidades/Codeblocks.jpeg");
 }
 
 .cardHabilidades .imgEclipse{
-    background: url("/assets/IMG/habilidades/Eclipse.png");
+    background: url("./IMG/habilidades/Eclipse.png");
 }
 
 .cardHabilidades .imgIntelliJ{
-    background: url("/assets/IMG/habilidades/IntelliJIDEA.png");
+    background: url("./IMG/habilidades/IntelliJIDEA.png");
 }
 
 .cardHabilidades .imgGit{
-    background: url("/assets/IMG/habilidades/Git.png");
+    background: url("./IMG/habilidades/Git.png");
 }
 
 .cardHabilidades .imgGitHub{
-    background: url("/assets/IMG/habilidades/GitHub.png");
+    background: url("./IMG/habilidades/GitHub.png");
 }
 
 .cardHabilidades .imgSSMS{
-    background: url("/assets/IMG/habilidades/SSMS.png");
+    background: url("./IMG/habilidades/SSMS.png");
 }
 
 .cardHabilidades .imgADS{
-    background: url("/assets/IMG/habilidades/AzureDS.png");
+    background: url("./IMG/habilidades/AzureDS.png");
 }
 
 .cardHabilidades .imgWorkbench{
-    background: url("/assets/IMG/habilidades/Workbench.jpeg");
+    background: url("./IMG/habilidades/Workbench.jpeg");
 }
 
 .cardHabilidades .imgNET{
-    background: url("/assets/IMG/habilidades/NET.png");
+    background: url("./IMG/habilidades/NET.png");
 }
 
 .cardHabilidades .imgSpringBoot{
-    background: url("/assets/IMG/habilidades/spring-boot.png");
+    background: url("./IMG/habilidades/spring-boot.png");
 }
 
 .cardHabilidades .imgHabilidades{
