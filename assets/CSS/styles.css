@@ -188,7 +188,6 @@ i:not(.header i){
 .cardFormacion{
     width: 45%;
     min-height: fit-content;
-    max-height: fit-content;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
