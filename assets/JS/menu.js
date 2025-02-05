@@ -13,17 +13,17 @@ const footer = document.querySelector(".footer");
 
 
 open.addEventListener("click", () => {
-    nav.classList.add("visible");
-    
-    main.classList.add("hiddenAll");
-    footer.classList.add("hiddenAll");
+  nav.classList.add("visible");
+
+  main.classList.add("hiddenAll");
+  footer.classList.add("hiddenAll");
 })
 
 close.addEventListener("click", () => {
-    nav.classList.remove("visible");
+  nav.classList.remove("visible");
 
-    main.classList.remove("hiddenAll");
-    footer.classList.remove("hiddenAll");
+  main.classList.remove("hiddenAll");
+  footer.classList.remove("hiddenAll");
 })
 
 itemA.addEventListener("click", () => {
@@ -55,9 +55,22 @@ itemD.addEventListener("click", () => {
 })
 
 itemE.addEventListener("click", () => {
-    nav.classList.remove("visible");
-  
-    main.classList.remove("hiddenAll");
-    footer.classList.remove("hiddenAll");
+  nav.classList.remove("visible");
+
+  main.classList.remove("hiddenAll");
+  footer.classList.remove("hiddenAll");
 })
-  
+
+document.addEventListener("DOMContentLoaded", () => {
+  const copy = document.querySelector(".footer .containerFooter #copy");
+  const a = document.createElement("a");
+  const anio = new Date().getFullYear();
+
+  a.href = "https://www.linkedin.com/in/julian-centurion/";
+  a.target = "_blank";
+  a.role = "noopener noreferrer";
+  a.innerHTML = "Julian Centurion";
+
+  copy.innerHTML = `© ${anio} - Portfolio Personal - Desarrollado por `;
+  copy.appendChild(a);
+});
